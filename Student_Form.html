@@ -1,0 +1,115 @@
+<body> 
+<form>
+    <h4>S'inscrire</h4>
+    <hr>
+    <table>
+        <tr>
+            <td>Name:</td>
+            <td>
+                <input type="text" placeholder="Full Name">
+            </td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td><input type="email" placeholder="abc@example.com" required></td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td><input type="password" placeholder="Password" required></td>
+        </tr>
+        <tr>
+            <td>Address:</td>
+            <td><textarea id="textarea" cols="21" rows="3"></textarea></td>
+        </tr>
+        <tr>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Institute Name:</td>
+            <td><input type="text" placeholder="Institute Name"></td>
+        </tr>
+        <tr>
+            <td>Mobile No:</td>
+            <td><input type="tel" placeholder="+212"></td>
+        </tr>
+        <tr>
+            <td>Birthday</td>
+            <td><input type="date"></td>
+        </tr>
+        <tr>
+            <td>Gender:</td>
+            <td>
+                <input type="radio" value="Male">
+                <label for="radio">Male</label>
+                <input type="radio" value="Female">
+                <label for="radio">Female</label>
+
+            </td>
+        </tr>
+        <tr>
+            <td>City:</td>
+            <td><input type="text" placeholder="City"></td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" name="submit" id="submit" value="Submit">
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+<style>
+    *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            align-items: center;
+            justify-content: center;
+        }
+        body{
+            background-color: #45a049;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 500px;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            padding: 10px;
+            border-radius: 6px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+        }
+        h4{
+            text-align: center;
+            font-size: 25px;
+            color: #150d61;
+        }
+        hr{
+            margin: 10px;
+            background-color: white;
+            border: 0;
+            height: 1px;
+            width: 100%;
+        }
+        label{
+            margin-bottom: 6px;
+        }
+        input{
+            margin-bottom: 5px;
+            padding: 5px;
+            border: 1px solid gray;
+            border-radius: 20px;
+        }
+        input:focus{
+            border: 1px solid green;
+        }
+        input[type="submit"]{
+            margin-top: 15px;
+            background-color: #45a049;
+            color: white;
+            border: 1px solid #45a049;
+            cursor: pointer;
+        }
+</style>

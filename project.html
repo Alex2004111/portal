@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classroom Management Portal</title>
+    <style>
+        body {
+            font-family: caveat;
+            line-height: 1.5;
+            margin: 0;
+            padding: 0;
+            background-color: gray;
+            color: #150d61;
+        }
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header img {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            height: 80px;
+            width: auto;
+        }
+        nav {
+            background: #150d61;
+            color: white;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        nav a:hover {
+            background: #575757;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #4CAF50;
+        }
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        table th {
+            background: #d3d2dd;
+            color: white;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #150d61;
+            color: white;
+            margin-top: 20px;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            align-items: center;
+            justify-content: center;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            padding: 10px;
+            border-radius: 6px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        h4{
+            text-align: center;
+            font-size: 20px;
+        }
+        hr{
+            margin: 10px;
+            background-color: #150d61;
+            border: 0;
+            height: 1px;
+            width: 100%;
+        }
+        label{
+            margin-bottom: 6px;
+        }
+        input{
+            margin-bottom: 5px;
+            padding: 5px;
+            border: 1px solid black;
+            border-radius: 20px;
+        }
+        input:focus{
+            border: 1px solid green;
+        }
+        input[type="submit"]{
+            margin-top: 15px;
+            background-color: #45a049;
+            color: white;
+            border: 1px solid #45a049;
+            cursor: pointer;
+        }
+        p{
+            text-align: center;
+            margin: 2px;
+            font-size: 13px;
+        }
+        p a{
+            color: #45a049;
+        }
+        form img{
+            width: 100%;
+        }
+
+        .percentage {
+            font-weight: bold;
+            font-size: 1.2em;
+            color: #4CAF50;
+            text-align: center;
+        }
+        .statusExcellent {
+            background-color: #4CAF50;
+        }
+        .statusPassable {
+            background-color: orange;
+        }
+        .statusInsuffisant {
+            background-color: red;
+        }
+        
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Montserrat:ital,wght@0,700;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">  
+</head>
+<body>
+    <header>
+        <img src="images/ofppt.png" alt="Logo de l'école">
+        <h1>Portail de gestion de classe</h1>
+        <p>Bienvenue dans votre centre de gestion de classe pour rationaliser votre flux de travail pédagogique et améliorer l'engagement des étudiants.</p>
+    </header>
+
+    <nav>
+        <a href="#Caractéristiques">Caractéristiques</a>
+        <a href="#Se connecter">Se connecter</a>
+        <a href="#Étudiants">Étudiants</a>
+        <a href="https://www.myway.ac.ma/fr" target="_blank">Ressources externes</a>
+    </nav>
+
+    <section id="Caractéristiques">
+        <h2>Caractéristiques :</h2>
+        <ul>
+            <li>Inscription et gestion des étudiants</li>
+            <li>Suivi de présence</li>
+            <li>Analyse des notes et des performances</li>
+            <li>Partage de ressources et annonces</li>
+        </ul>
+    </section>
+
+    <section id="Se connecter">
+        <h2>Connextion :</h2>
+        <form>
+            <form>
+                <img src="images/back.webp">
+                <h4>Se connecter</h4>
+                <hr>
+                <label>Adresse Email</label>
+                <input type="email">
+                <label>Mot de passe</label>
+                <input type="password">
+                <input type="submit" value="se connecter">
+                <p>Vous n'avez pas déja un compte ? <a href="Student_Form.html">s'inscrire</a></p>
+                </form>
+        </form>
+    </section>
+
+    <section id="Étudiants">
+        <h2>Liste des étudiants :</h2>
+        <table>
+            <tr>
+                <th>Nom</th>
+                <th>Age</th>
+                <th>Groupe</th>
+                <th>Email</th>
+                <th>Note</th>
+                <th>Mention</th>
+            </tr>
+            <tr>
+                <td>Mohamed</td>
+                <td>18</td>
+                <td>101</td>
+                <td>Mohamed@example.com</td>
+                <td>17.5</td>
+                <td class="statusExcellent">Excellent </td>
+            </tr>
+            <tr>
+                <td>Amine</td>
+                <td>19</td>
+                <td>102</td>
+                <td>Amine55@gmail.com</td>
+                <td>13</td>
+                <td class="statusPassable">Passable</td>
+            </tr>
+            <tr>
+                <td>Nisrin</td>
+                <td>19</td>
+                <td>101</td>
+                <td>Nisrin2@gmail.com</td>
+                <td>19</td>
+                <td class="statusExcellent">Excellent</td>
+            </tr>
+            <tr>
+                <td>Walid</td>
+                <td>18</td>
+                <td>102</td>
+                <td>Walid09@gmail.com</td>
+                <td>9.25</td>
+                <td class="statusInsuffisant">Insuffisant</td>
+            </tr>
+            <tr>
+                <td>Nada</td>
+                <td>19</td>
+                <td>102</td>
+                <td>Nada12@gmail.com</td>
+                <td>16</td>
+                <td class="statusExcellent">Excellent</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="percentage">
+        <p class="percentage">Pourcentage des élèves "Excellents" : 60%</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 OFPPT-Copyright</p>
+    </footer>
+</body>
+</html>
